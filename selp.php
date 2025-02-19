@@ -28,7 +28,6 @@ function logActivity($userId, $action, $details = '')
 
 function isAdmin($userId)
 {
-
     global $requiredChannel, $botToken;
 
     // بررسی ادمین بودن در کانال
