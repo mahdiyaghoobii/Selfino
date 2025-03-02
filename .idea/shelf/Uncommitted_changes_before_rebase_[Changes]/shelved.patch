@@ -1,0 +1,120 @@
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
++++ /dev/null	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
+@@ -1,8 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: .idea/selfino.iml
+===================================================================
+diff --git a/.idea/selfino.iml b/.idea/selfino.iml
+deleted file mode 100644
+--- a/.idea/selfino.iml	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
++++ /dev/null	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="WEB_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
++++ /dev/null	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/selfino.iml" filepath="$PROJECT_DIR$/.idea/selfino.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
++++ /dev/null	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
+@@ -1,15 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <profile version="1.0">
+-    <option name="myName" value="Project Default" />
+-    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="myValues">
+-        <value>
+-          <list size="1">
+-            <item index="0" class="java.lang.String" itemvalue="100%;" />
+-          </list>
+-        </value>
+-      </option>
+-      <option name="myCustomValuesEnabled" value="true" />
+-    </inspection_tool>
+-  </profile>
+-</component>
+\ No newline at end of file
+Index: .idea/php.xml
+===================================================================
+diff --git a/.idea/php.xml b/.idea/php.xml
+deleted file mode 100644
+--- a/.idea/php.xml	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
++++ /dev/null	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="MessDetectorOptionsConfiguration">
+-    <option name="transferred" value="true" />
+-  </component>
+-  <component name="PHPCSFixerOptionsConfiguration">
+-    <option name="transferred" value="true" />
+-  </component>
+-  <component name="PHPCodeSnifferOptionsConfiguration">
+-    <option name="highlightLevel" value="WARNING" />
+-    <option name="transferred" value="true" />
+-  </component>
+-  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+-  <component name="PhpStanOptionsConfiguration">
+-    <option name="transferred" value="true" />
+-  </component>
+-  <component name="PsalmOptionsConfiguration">
+-    <option name="transferred" value="true" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 2dee8fd0b916ebfcce6bbceae0b94b008b32674f)
++++ b/.idea/vcs.xml	(date 1740947317245)
+@@ -1,6 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
++  <component name="VcsDirectoryMappings" defaultProject="true" />
+ </project>
+\ No newline at end of file
