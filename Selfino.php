@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Tehran'); // تنظیم منطقه زمانی به تهران
-$botToken = '7741926727:AAHH-pY_nhzgc2I5fkDe79giH_IhuaCCJTw';
+$botToken = 'BOT-TOKEN';
 $groupId = -1002446115272; // شناسه عددی گروه (با منفی)
 $topicId = 55235; // شناسه تاپیک (عدد مثبت)
 $requiredGroup = '@semnanm'; // Required group username with @
@@ -28,7 +28,6 @@ function logActivity($userId, $action, $details = '')
 
 function isAdmin($userId)
 {
-
     global $requiredChannel, $botToken;
 
     // بررسی ادمین بودن در کانال
@@ -155,6 +154,7 @@ function updateSubmission($userId)
 
     file_put_contents($submissionsFile, json_encode($submissions));
 }
+
 function getRemainingRequestsMessage($userId)
 {
     $submissionsFile = 'submissions.json';
@@ -228,6 +228,7 @@ function sendMessage($chatId, $text, $replyMarkup = null)
     logActivity($chatId, 'SEND_MESSAGE', substr($text, 0, 50));
     return $newMessageId;
 }
+
 function handleStart($userId)
 {
     $keyboard = [
@@ -294,14 +295,9 @@ function handleDining($userId, $dining)
     $keyboard = [
         'inline_keyboard' => [
             [
-//                normal days:
-//                ['text' => 'صبحانه ☀️', 'callback_data' => 'meal:صبحانه'],
-//                ['text' => 'ناهار 🌞', 'callback_data' => 'meal:ناهار'],
-//                ['text' => 'شام 🌙', 'callback_data' => 'meal:شام']
-
-//                Ramadan:
-                ['text' => 'سحری 🌅', 'callback_data' => 'meal:سحری'],
-                ['text' => 'افطار 🌙', 'callback_data' => 'meal:افطار']
+                ['text' => 'صبحانه ☀️', 'callback_data' => 'meal:صبحانه'],
+                ['text' => 'ناهار 🌞', 'callback_data' => 'meal:ناهار'],
+                ['text' => 'شام 🌙', 'callback_data' => 'meal:شام']
             ],
             [
                 ['text' => '🔙 بازگشت', 'callback_data' => 'back:dining']
@@ -402,6 +398,7 @@ function postToChannel($data, $userId)
 
     logActivity($userId, 'POSTED_TO_CHANNEL', json_encode($data));
 }
+
 function sendMessageToTopic($chatId, $threadId, $text, $replyMarkup = null)
 {
     global $botToken;
@@ -556,8 +553,7 @@ if (isset($update['callback_query'])) {
                 sendMessage($userId, "⚠️ خطا در بازگشت به مرحله قبل!");
                 break;
         }
-    }
-    // Handle other existing callback actions
+    } // Handle other existing callback actions
     elseif ($action === 'action') {
         handleAction($userId, $value);
     } elseif ($action === 'dining') {
