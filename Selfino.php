@@ -295,9 +295,13 @@ function handleDining($userId, $dining)
     $keyboard = [
         'inline_keyboard' => [
             [
-                ['text' => 'صبحانه ☀️', 'callback_data' => 'meal:صبحانه'],
-                ['text' => 'ناهار 🌞', 'callback_data' => 'meal:ناهار'],
-                ['text' => 'شام 🌙', 'callback_data' => 'meal:شام']
+//                normal days:
+//                ['text' => 'صبحانه ☀️', 'callback_data' => 'meal:صبحانه'],
+//                ['text' => 'ناهار 🌞', 'callback_data' => 'meal:ناهار'],
+//                ['text' => 'شام 🌙', 'callback_data' => 'meal:شام']
+//                Ramadan:
+                ['text' => 'سحری 🌅', 'callback_data' => 'meal:سحری'],
+                ['text' => 'افطار 🌙', 'callback_data' => 'meal:افطار']
             ],
             [
                 ['text' => '🔙 بازگشت', 'callback_data' => 'back:dining']
